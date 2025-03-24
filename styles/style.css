@@ -34,6 +34,7 @@
 }
 
 body {
+  background-color: var(--font-color2);
   #herosection {
     background-image: url(/assets/wave_top.jpg);
     background-position: center;
@@ -57,18 +58,18 @@ body {
       }
     }
     h2 {
-        span {
-            font-family: var(--font-family1);
-            font-size: 1.5em;
-        }
+      span {
+        font-family: var(--font-family1);
+        font-size: 1.5em;
+      }
     }
   }
   #description {
-    background-color: var(--font-color2);
+    margin-bottom: 10vh;
     p {
       width: 50%;
       padding-left: 29%;
-      color: white;
+      color: var(--font-color1);
       font-family: var(--font-family2);
       font-size: 2em;
       padding-top: 20vh;
@@ -80,45 +81,99 @@ body {
       }
     }
   }
-  #realisation, #parcours {
-    background-color: var(--font-color2);
+  #realisation,
+  #parcours,
+  #socials,
+  #contact {
+    margin-bottom: 10vh;
     h2 {
-        font-family: var(--font-family1);
-        text-align: center;
-        color: white;
-        padding-bottom: 5vh;
-        font-size: 3em;
-      }
+      font-family: var(--font-family1);
+      text-align: center;
+      color: var(--font-color1);
+      padding-bottom: 5vh;
+      font-size: 3em;
+    }
   }
   #realisation {
     ul {
-        display: flex;
-        margin-left: 15%;
-        margin-right: 15%;
-        justify-content: space-around;
+      display: flex;
+      margin-left: 15%;
+      margin-right: 15%;
+      justify-content: space-around;
       li {
         list-style: none;
         width: 35%;
-        height: 120vh;
+        height: 100vh;
         img {
-            width: 100%;
-            height: 95vh;
-            object-fit: cover;
-            object-position: top;
+          width: 100%;
+          height: 85vh;
+          object-fit: cover;
+          object-position: top;
         }
         img:hover {
-            background-color: var(--font-color2);
-            opacity: 0.1;        
+          background-color: var(--font-color2);
+          opacity: 0.1;
         }
         h3 {
-            color: white;
-            font-weight: 50;
-            font-size: 1em;
-            margin-bottom: 2%;
+          color: var(--font-color1);
+          font-weight: 50;
+          font-size: 1em;
+          margin-bottom: 2%;
         }
       }
     }
   }
   #parcours {
+    margin-left: 15%;
+    margin-right: 15%;
+    color: var(--font-color1);
+    div {
+      display: flex;
+      p:first-child {
+        font-size: 5em;
+        width: 15vw;
+      }
+      p:last-child {
+        width: 40vw;
+        text-align: justify;
+        margin-left: 10%;
+        margin-top: 2.5%;
+      }
+    }
+  }
+  #socials {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 70vh;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        text-align: center;
+        padding-top: 20vh;
+        .linkedin {
+          background-image: url(/assets/wave_side.jpg);
+          padding: 20vh 20vh 20vh 20vh;
+          background-size: cover;
+          background-position: center;
+        }
+        .github {
+          background-image: url(/assets/wave_side2.jpg);
+          padding: 20vh 20vh 20vh 20vh;
+          background-size: cover;
+          background-position: center;
+        }
+        a {
+          color: var(--font-color1);
+          font-size: 2em;
+          text-transform: uppercase;
+        }
+        a:hover {
+          background-color: var(--font-color2);
+          opacity: 0.1;
+        }
+      }
+    }
   }
 }
