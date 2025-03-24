@@ -34,6 +34,21 @@
 }
 
 body {
+  button {
+    background-color: transparent;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 10px;
+    position: fixed;
+    text-transform: uppercase;
+    left: 90vw;
+    top: 5vh;
+    color: var(--font-color1);
+    border: 1px solid var(--font-color1);
+  }
+  button:hover {
+    color: var(--font-color2);
+    border: 1px solid var(--font-color2);
+  }
   background-color: var(--font-color2);
   #herosection {
     background-image: url(/assets/wave_top.jpg);
