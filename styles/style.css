@@ -2,6 +2,8 @@
   --font-main: "Boldonse", system-ui;
   --font-family1: "Nothing You Could Do", cursive;
   --font-family2: "League Gothic", sans-serif;
+  --font-family3: "Libre Baskerville", serif;
+  --font-family4: "Birthstone Bounce", cursive;
   --font-color1: white;
   --font-color2: rgb(0, 45, 58);
   --font-color3: rgba(17, 25, 40, 0.9);
@@ -25,6 +27,36 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.birthstone-bounce-regular {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.birthstone-bounce-medium {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 500;
+  font-style: normal;
 }
 
 * {
@@ -99,19 +131,16 @@ body {
       font-weight: 50;
     }
     h1 {
-      padding-top: 10vh;
       font-size: 10em;
-      text-transform: capitalize;
+      font-family: var(--font-family2);
+      text-transform: uppercase;
       color: var(--font-color2);
-      /* span {
-        .text-part-left {
-          font-family: var(--font-family1);
-          font-size: 1.5em;
-        }
-        .text-part-right {
-          font-family: var(--font-family2);
-        }
-      } */
+      span:first-child {
+        font-family: var(--font-family4);
+        font-size: 2em;
+        text-transform: capitalize;
+        padding-right: 3vw;
+      }
     }
     h2 {
       font-family: var(--font-family2);
@@ -127,6 +156,16 @@ body {
       font-family: var(--font-family1);
       text-transform: lowercase;
     }
+    div:last-child {
+      margin-top: 9vh;
+      line-height: 6vh;
+    }
+    .slide-bottom {
+      -webkit-animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+   
   }
   #description {
     margin-bottom: 10vh;
@@ -246,5 +285,26 @@ body {
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
 }
