@@ -131,13 +131,13 @@ body {
       font-weight: 50;
     }
     h1 {
-      font-size: 10em;
+      font-size: 11em;
       font-family: var(--font-family2);
       text-transform: uppercase;
       color: var(--font-color2);
       span:first-child {
         font-family: var(--font-family4);
-        font-size: 2em;
+        font-size: 1.9em;
         text-transform: capitalize;
         padding-right: 3vw;
       }
@@ -157,7 +157,7 @@ body {
       text-transform: lowercase;
     }
     div:last-child {
-      margin-top: 9vh;
+      margin-top: 10vh;
       line-height: 6vh;
     }
     .slide-bottom {
