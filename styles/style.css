@@ -49,7 +49,43 @@ body {
     color: var(--font-color2);
     border: 1px solid var(--font-color2);
   }
+  a:visited {
+    color: var(--font-color1);
+    border: 1px solid var(--font-color1);
+  }
   background-color: var(--font-color2);
+
+  nav {
+    background-image: url(/assets/wave_inside.avif);
+    ul {
+      padding: 5%;
+      height: 100vh;
+      li {
+        text-transform: uppercase;
+        list-style: none;
+        text-align: center;
+        a {
+          padding-left: 2%;
+          font-size: 6em;
+          font-family: var(--font-family2);
+          color: var(--font-color1);
+          text-decoration: none;
+        }
+        a:hover {
+          /* color: rgb(0, 119, 255); */
+          font-style: italic;
+          font-family: var(--font-family1);
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+    flex-direction: column;
+  }
+
   #herosection {
     background-image: url(/assets/wave_top.jpg);
     background-position: center;
@@ -67,23 +103,37 @@ body {
       font-size: 10em;
       text-transform: capitalize;
       color: var(--font-color2);
+      /* span {
+        .text-part-left {
+          font-family: var(--font-family1);
+          font-size: 1.5em;
+        }
+        .text-part-right {
+          font-family: var(--font-family2);
+        }
+      } */
+    }
+    h2 {
+      font-family: var(--font-family2);
+      text-transform: uppercase;
+      font-size: 2em;
       span {
         font-family: var(--font-family1);
         font-size: 1.5em;
       }
     }
-    h2 {
-      span {
-        font-family: var(--font-family1);
-        font-size: 1.5em;
-      }
+    h2:hover {
+      font-style: italic;
+      font-family: var(--font-family1);
+      text-transform: lowercase;
     }
   }
   #description {
     margin-bottom: 10vh;
     p {
       width: 50%;
-      padding-left: 29%;
+      margin-left: 25%;
+      margin-right: 25%;
       color: var(--font-color1);
       font-family: var(--font-family2);
       font-size: 2em;
@@ -141,7 +191,10 @@ body {
   #parcours {
     margin-left: 15%;
     margin-right: 15%;
-    color: var(--font-color1);
+    color: var(--font-color3);
+    h2 {
+      color: var(--font-color3);
+    }
     div {
       display: flex;
       p:first-child {
@@ -154,6 +207,9 @@ body {
         margin-left: 10%;
         margin-top: 2.5%;
       }
+    }
+    div:hover {
+      color: var(--font-color1);
     }
   }
   #socials {
