@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nina Quétin</title>
-    <link rel="stylesheet" href="https://niantique.github.io/Portfolio//styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +22,20 @@
       href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <button onclick="showSideBar()"><a href="#nav">Menu</a></button>
+    <button onclick="showSideBar()" class="menuButton">
+      <a href="#nav">Menu</a>
+    </button>
 
     <nav id="nav">
       <ul class="sidebar">
@@ -37,15 +48,18 @@
     </nav>
 
     <section id="herosection">
-      <div class="slide-bottom"><h1><span>Nina</span> Quétin</h1></div>
-      <div>
-      <h2><span>(01)</span> Développeuse Web</h2>
-      <h2><span>(02)</span> Développeuse Mobile</h2>
-      <h2><span>(03)</span> A la recherche d'un stage</h2>
-    </div>
+      <div class="slide-bottom">
+        <h1><span>Nina</span> Quétin</h1>
+      </div>
+      <div class="">
+        <h2><span>(01)</span> Développeuse Web</h2>
+        <h2><span>(02)</span> Développeuse Mobile</h2>
+        <h2><span>(03)</span> A la recherche d'un stage</h2>
+      </div>
     </section>
 
     <section id="description">
+      <p>DESCRIPTION</p>
       <p>
         Je m'appelle Nina, j'ai 29 ans et je suis en formation de développeur
         web et web mobile chez Human Booster près de Lyon. Suite à mes études,
@@ -177,17 +191,40 @@
     </section>
 
     <section id="contact">
+      <div class="container">
       <h2>Contactez-moi</h2>
 
-      <form action="">
-        <label for="fname">Hello, je m'appelle </label>
-        <input type="text" id="fname" name="fname">
+      <form action="" class="form">
+        <label for="name">Hello, je m'appelle </label>
+        <input type="text" id="name" name="name" /> <br />
         <label for="mail">mon email est le suivant</label>
-        <input type="text" id="mail" name="mail">
+        <input type="email" id="mail" name="mail" />
+        <div>
+        <p>Je suis un</p>
+        <div>
+          <div class="inputLabelParticulier">
+        <input type="radio" id="particulier" name="radio" />
+        <label for="particulier">particulier</label>
+      </div>
+        <input type="radio" id="professionnel" name="radio" />
+        <label for="professionnel">professionnel</label>
+      </div>
+      </div>
+        <label for="msg">Je souhaiterais vous parler de...</label> <br>
+        <textarea id="msg" name="user_message" rows="8" cols="60"></textarea><br/>
+        <button class="formButton" type="submit">Send your message</button>
+      </div>
       </form>
-
-
     </section>
+
+    <footer>
+      <div style="text-align:center;">
+      <p>Et si nous créions</p>
+      <p>des merveilles <span>ensemble</span> ?</p>
+      <button>nina.quetin@gmail.com</button>
+    </div>
+
+    </footer>
 
     <script>
       // function showSideBar() {
