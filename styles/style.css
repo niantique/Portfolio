@@ -94,6 +94,20 @@ body {
     border: 1px solid var(--font-color1);
   }
 
+  button#myBtn {
+    background-color: transparent;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--font-color1);
+    border: 1px solid var(--font-color1);
+    margin-left: 92%;  
+    margin-bottom: 2%;
+  }
+  button.menuButton:hover {
+    color: var(--font-color2);
+    border: 1px solid var(--font-color2);
+  }
   background-color: var(--font-color2);
 
   nav {
@@ -329,7 +343,7 @@ body {
         line-height: 2em;
         label,
         p {
-          font-family: var(--font-family1);
+          font-family: var(--font-family3);
           color: var(--font-color2);
           font-weight: 600;
         }
@@ -349,19 +363,21 @@ body {
           }
         }
         textarea {
-          font-family: var(--font-family1);
+          font-family: var(--font-family3);
           color: lightblue;
           font-weight: 600;
           width: 100%;
+          margin-top: 2%;
+          margin-bottom: 2%;
         }
         input[type="text"] {
-          width: 76%;
+          width: 73%;
           border: none;
           border-bottom: 2px solid var(--font-color2);
           background-color: transparent;
         }
         input[type="email"] {
-          width: 67.5%;
+          width: 65%;
           border: none;
           border-bottom: 2px solid var(--font-color2);
           background-color: transparent;
@@ -373,6 +389,9 @@ body {
         border-radius: 10px;
         color: var(--font-color2);
         border-color: var(--font-color2);
+        font-family: var(--font-family1);
+        font-weight: 900;
+        font-size: 1.1em;
         margin-left: 33%;
         margin-right: 33%;
       }
@@ -430,3 +449,8 @@ body {
     transform: translateY(100px);
   }
 }
+
+html{
+  scroll-behavior: smooth;
+  }
+  
