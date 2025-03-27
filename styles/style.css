@@ -66,32 +66,37 @@
 }
 
 body {
+  a.englishVersion {
+    padding: 1vh 3vh 1vh 3vh;
+    margin-left: 88%;
+    margin-bottom: 2%;
+    top: 3%;
+    position: absolute;
+    border-radius: 10px;
+    color: var(--font-color1);
+    text-decoration: none;
+  }
+
   button.menuButton {
     background-color: transparent;
     padding: 1vh 3vh 1vh 3vh;
     border-radius: 10px;
     position: fixed;
     text-transform: uppercase;
-    left: 90vw;
-    top: 5vh;
+    margin-left: 92%;
+    margin-bottom: 2%;
+    top: 3%;
+    /* left: 90vw;
+    top: 5vh; */
     color: var(--font-color1);
     border: 1px solid var(--font-color1);
-  }
-  button.menuButton:hover {
-    color: var(--font-color2);
-    border: 1px solid var(--font-color2);
-  }
-  button.menuButton:visited {
-    color: var(--font-color1);
-    border: 1px solid var(--font-color1);
-  }
-  button.menuButton:link {
-    color: var(--font-color1);
-    border: 1px solid var(--font-color1);
-  }
-  button.menuButton:active {
-    color: var(--font-color1);
-    border: 1px solid var(--font-color1);
+    a {
+      color: var(--font-color1);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--font-color2);
+    }
   }
 
   button#myBtn {
@@ -101,7 +106,7 @@ body {
     text-transform: uppercase;
     color: var(--font-color1);
     border: 1px solid var(--font-color1);
-    margin-left: 92%;  
+    margin-left: 92%;
     margin-bottom: 2%;
   }
   button.menuButton:hover {
@@ -450,7 +455,6 @@ body {
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
-  }
-  
+}
