@@ -1,0 +1,182 @@
+:root {
+  --font-main: "Boldonse", system-ui;
+  --font-family1: "Nothing You Could Do", cursive;
+  --font-family2: "League Gothic", sans-serif;
+  --font-family3: "Libre Baskerville", serif;
+  --font-family4: "Birthstone Bounce", cursive;
+  --font-color1: white;
+  --font-color2: rgb(0, 45, 58);
+  --font-color3: rgba(17, 25, 40, 0.9);
+}
+
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nothing-you-could-do-regular {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-gothic {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.birthstone-bounce-regular {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.birthstone-bounce-medium {
+  font-family: "Birthstone Bounce", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--font-color2);
+}
+
+body {
+
+    button.menuButton {
+        background-color: transparent;
+        padding: 1vh 3vh 1vh 3vh;
+        border-radius: 10px;
+        position: fixed;
+        text-transform: uppercase;
+        margin-left: 92%;
+        margin-bottom: 2%;
+        top: 3%;
+        /* left: 90vw;
+        top: 5vh; */
+        color: var(--font-color1);
+        border: 1px solid var(--font-color1);
+        a {
+          color: var(--font-color1);
+          text-decoration: none;
+        }
+        a:hover {
+          color: var(--font-color2);
+        }
+      }
+    
+      button#myBtn {
+        background-color: transparent;
+        padding: 1vh 3vh 1vh 3vh;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: var(--font-color1);
+        border: 1px solid var(--font-color1);
+        margin-left: 92%;
+        margin-bottom: 2%;
+      }
+      button.menuButton:hover {
+        color: var(--font-color2);
+        border: 1px solid var(--font-color2);
+      }
+      background-color: var(--font-color2);
+    
+      nav {
+        background-image: url(../assets/wave_inside.avif);
+        ul {
+          padding: 5%;
+          height: 100vh;
+          li {
+            text-transform: uppercase;
+            list-style: none;
+            text-align: center;
+            a {
+              padding-left: 2%;
+              font-size: 6em;
+              font-family: var(--font-family2);
+              color: var(--font-color1);
+              text-decoration: none;
+            }
+            a:hover {
+              /* color: rgb(0, 119, 255); */
+              font-style: italic;
+              font-family: var(--font-family1);
+              text-transform: lowercase;
+            }
+          }
+        }
+      }
+    
+      .sidebar {
+        display: none;
+        flex-direction: column;
+      }
+  section {
+    margin-top: 2em;
+
+    div {
+      h2 {
+        color: var(--font-color1);
+        font-family: var(--font-family2);
+        text-transform: uppercase;
+        font-size: 8em;
+        writing-mode: vertical-lr;
+        margin-right: 0.5em;
+      }
+      display: flex;
+      div {
+        display: block;
+        margin-left: 3em;
+        width: 90%;
+        h3 {
+          color: var(--font-color1);
+          font-family: var(--font-family1);
+          font-size: 2em;
+          margin-bottom: 1em;
+        }
+        p {
+          color: var(--font-color1);
+          font-family: var(--font-main);
+          text-align: justify;
+          font-size: 0.8em;
+          width: 80%;
+        }
+        img {
+            width: 80%;
+            margin-top: 5em;
+        }
+      }
+    }
+   
+
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
