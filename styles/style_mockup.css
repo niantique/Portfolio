@@ -63,80 +63,77 @@
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
-  background-color: var(--font-color2);
 }
 
 body {
+    background-color: var(--font-color2);
 
-    button.menuButton {
-        background-color: transparent;
-        padding: 1vh 3vh 1vh 3vh;
-        border-radius: 10px;
-        position: fixed;
+  button.menuButton {
+    background-color: transparent;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 10px;
+    position: fixed;
+    text-transform: uppercase;
+    margin-left: 92%;
+    margin-bottom: 2%;
+    top: 3%;
+    color: var(--font-color1);
+    border: 1px solid var(--font-color1);
+    a {
+      color: var(--font-color1);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--font-color3);
+    }
+  }
+
+  button#myBtn {
+    background-color: transparent;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--font-color1);
+    border: 1px solid var(--font-color1);
+    margin-left: 92%;
+    margin-bottom: 2%;
+  }
+  button.menuButton:hover {
+    color: var(--font-color3);
+    border: 1px solid var(--font-color3);
+  }
+
+  nav {
+    background-image: url(../assets/wave_inside.avif);
+    ul {
+      padding: 5%;
+      height: 100vh;
+      li {
         text-transform: uppercase;
-        margin-left: 92%;
-        margin-bottom: 2%;
-        top: 3%;
-        /* left: 90vw;
-        top: 5vh; */
-        color: var(--font-color1);
-        border: 1px solid var(--font-color1);
+        list-style: none;
+        text-align: center;
         a {
+          padding-left: 2%;
+          font-size: 6em;
+          font-family: var(--font-family2);
           color: var(--font-color1);
           text-decoration: none;
         }
         a:hover {
-          color: var(--font-color3);
+          font-style: italic;
+          font-family: var(--font-family1);
+          text-transform: lowercase;
         }
       }
-    
-      button#myBtn {
-        background-color: transparent;
-        padding: 1vh 3vh 1vh 3vh;
-        border-radius: 10px;
-        text-transform: uppercase;
-        color: var(--font-color1);
-        border: 1px solid var(--font-color1);
-        margin-left: 92%;
-        margin-bottom: 2%;
-      }
-      button.menuButton:hover {
-        color: var(--font-color3);
-        border: 1px solid var(--font-color3);
-      }
-      background-color: var(--font-color2);
-    
-      nav {
-        background-image: url(../assets/wave_inside.avif);
-        ul {
-          padding: 5%;
-          height: 100vh;
-          li {
-            text-transform: uppercase;
-            list-style: none;
-            text-align: center;
-            a {
-              padding-left: 2%;
-              font-size: 6em;
-              font-family: var(--font-family2);
-              color: var(--font-color1);
-              text-decoration: none;
-            }
-            a:hover {
-              font-style: italic;
-              font-family: var(--font-family1);
-              text-transform: lowercase;
-            }
-          }
-        }
-      }
-    
-      .sidebar {
-        display: none;
-        flex-direction: column;
-      }
-  section {
-    margin-top: 2em;
+    }
+  }
+
+  .sidebar {
+    display: none;
+    flex-direction: column;
+  }
+  /* section {
+    margin-top: 2em; */
 
     div {
       h2 {
@@ -146,6 +143,9 @@ body {
         font-size: 8em;
         writing-mode: vertical-lr;
         margin-right: 0.5em;
+      }
+      a {
+        text-decoration: none;
       }
       display: flex;
       div {
@@ -164,18 +164,28 @@ body {
           text-align: justify;
           font-size: 0.8em;
           width: 80%;
+          margin-bottom: 2em;
+        }
+        a {
+          color: var(--font-color1);
+          text-decoration: none;
+          border: 1px solid var(--font-color1);
+          border-radius: 10px;
+          padding: 5px 15px 5px 15px;
+        }
+        a:hover {
+          color: var(--font-color2);
+          border: 1px solid var(--font-color2);
+          background-color: var(--font-color1);
         }
         img {
-            width: 80%;
-            margin-top: 5em;
+          width: 80%;
+          margin-top: 5em;
         }
       }
     }
-   
-
   }
-}
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}

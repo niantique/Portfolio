@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nina Quétin - Maquette</title>
+    <link rel="stylesheet" href="/styles/style_mockup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <button onclick="showSideBar()" class="menuButton">
+        <a href="#nav">Menu</a>
+      </button>
+      <nav id="nav">
+        <ul class="sidebar">
+          <li><a href="/index.html">Description</a></li>
+          <li><a href="/index.html">Réalisations</a></li>
+          <li><a href="/index.html">Parcours</a></li>
+          <li><a href="/index.html">Réseaux</a></li>
+          <li><a href="/index.html">Contactez-moi</a></li>
+          </ul>
+      </nav>
+
+
+    <section>
+      <div>
+        <a href="/index.html"><h2>Mes réalisations</h2></a>
+        <div>
+          <h3>Wander, maquette VSCode HTML CSS</h3>
+          <p>
+            Dans le cadre de mes 4 jours de cours de maquettage chez Human
+            Booster, j'ai eu l'opportunité de travailler sur la création du
+            visuel d'un site internet pour une agence de voyage de luxe fictive.
+            <br />Ce projet, réalisé sur Figma, m'a permis d'approfondir mes
+            compétences en design web en me confrontant à un exercice pratique
+            qui alliait esthétique et fonctionnalité. J'ai conçu une interface
+            élégante et épurée, en tenant compte des besoins spécifiques d'une
+            clientèle haut de gamme. Ce travail m'a également permis de mieux
+            comprendre l'importance de l'expérience utilisateur (UX) et de
+            l'interface utilisateur (UI) dans la conception d'un site internet
+            professionnel.
+          </p>
+          <a href="https://lnkd.in/e6VaZuaP">Découvrez le lien Github de la maquette</a>
+         <img src="/assets/Wander Vscode reduce.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        function showSideBar() {
+          const sidebar = document.querySelector(".sidebar");
+          if (sidebar.style.display === "none") {
+            sidebar.style.display = "flex";
+          } else {
+            sidebar.style.display = "none";
+          }
+        }
+  
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+  
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+  
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+      </script>
+
+
+  </body>
+</html>

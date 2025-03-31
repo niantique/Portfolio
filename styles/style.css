@@ -130,7 +130,6 @@ body {
           text-decoration: none;
         }
         a:hover {
-          /* color: rgb(0, 119, 255); */
           font-style: italic;
           font-family: var(--font-family1);
           text-transform: lowercase;
