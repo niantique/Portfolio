@@ -87,6 +87,15 @@ body {
       color: var(--font-color3);
     }
   }
+  @media (max-width: 650px) {
+    button.menuButton {
+    margin-left: 85%;
+    }
+    a.englishVersion {
+      margin-left: 75%;
+    }
+  }
+
 
   button#myBtn {
     background-color: transparent;
@@ -95,9 +104,21 @@ body {
     text-transform: uppercase;
     color: var(--font-color1);
     border: 1px solid var(--font-color1);
-    margin-left: 92%;
     margin-bottom: 2%;
   }
+
+  button.myBtn {
+    margin-left: 92%;
+  }
+
+
+  @media (max-width: 650px) {
+    button.myBtn {
+      margin-left: 85%;
+      }
+  }
+
+
   button.menuButton:hover {
     color: var(--font-color3);
     border: 1px solid var(--font-color3);
@@ -132,8 +153,6 @@ body {
     display: none;
     flex-direction: column;
   }
-  /* section {
-    margin-top: 2em; */
 
     div {
       h2 {
