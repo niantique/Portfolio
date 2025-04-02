@@ -136,12 +136,12 @@ body {
     background-image: url(../assets/wave_inside.avif);
     ul {
       padding: 5%;
-      height: 100vh;
+      height: 80vh;
       li {
         text-transform: uppercase;
         list-style: none;
         text-align: center;
-        /* width: 50%; */
+        width: 100%;
         a {
           padding-left: 2%;
           font-size: 6em;
@@ -367,6 +367,9 @@ body {
   margin-right: 15%;
   margin-bottom: 20%;
   height: 70vh;
+  @media (max-width: 650px) {
+    height: 80vh;
+  }
   div {
     a {
       text-decoration: none;
@@ -383,6 +386,11 @@ body {
       color: var(--font-color4);
       font-family: var(--font-family1);
       font-size: 1.5em;
+    }
+    @media (max-width: 650px) {
+      h3 {
+        font-size: 2em;
+      }
     }
   }
 }
