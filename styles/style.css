@@ -363,12 +363,19 @@ body {
 }
 
 #socials {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 20%;
-  height: 70vh;
+  background-image: url(../assets/wave_cloud.avif);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 22%;
+  height: 50vh;
   @media (max-width: 650px) {
     height: 80vh;
+  }
+  h2 {
+    padding-top: 10%;
   }
   div {
     a {
@@ -376,16 +383,17 @@ body {
     }
     h3 {
       font-size: 4em;
-      color: var(--font-color1);
+      color: var(--font-color2);
     }
     h3:hover {
-      color: var(--font-color4);
+      color: var(--font-color1);
     }
     p {
-      margin-left: 30%;
-      color: var(--font-color4);
+      margin-left: 40%;
+      color: var(--font-color1);
       font-family: var(--font-family1);
-      font-size: 1.5em;
+      font-size: 1.4em;
+      text-align: justify;
     }
     @media (max-width: 650px) {
       h3 {
@@ -394,7 +402,7 @@ body {
     }
   }
 }
-#contact {
+/* #contact {
   .container {
     padding-top: 5%;
     width: 100%;
@@ -485,7 +493,7 @@ body {
       border-color: var(--font-color1);
     }
   }
-}
+} */
 footer {
   height: 50vh;
   div {
