@@ -388,10 +388,10 @@ body {
       color: var(--font-color1);
     }
     p {
-      margin-left: 40%;
+      margin-left: 37%;
       color: var(--font-color1);
       font-family: var(--font-family1);
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-align: justify;
     }
     @media (max-width: 650px) {
