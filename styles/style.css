@@ -312,10 +312,12 @@ body {
         height: 85vh;
         object-fit: cover;
         object-position: top;
+        background-color: var(--font-color2);
+        opacity: 0.3;
       }
       img:hover {
-        background-color: var(--font-color2);
-        opacity: 0.1;
+        background: none;
+        opacity: 1;
       }
       h3 {
         color: var(--font-color1);
@@ -357,9 +359,9 @@ body {
       margin-top: 2.5%;
     }
   }
-  div:hover {
+  /* div:hover {
     color: var(--font-color1);
-  }
+  } */
 }
 
 #socials {

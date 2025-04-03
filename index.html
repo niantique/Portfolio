@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nina Quétin</title>
-    <link
-      rel="stylesheet"
-      href="styles/style.css"
-    />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +27,8 @@
       href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -44,7 +43,7 @@
         <li><a href="#realisation">Réalisations</a></li>
         <li><a href="#parcours">Parcours</a></li>
         <li><a href="#socials">Réseaux</a></li>
-        <li><a href="#contact">Contactez-moi</a></li>
+        <li><a href="#mail">Contactez-moi</a></li>
       </ul>
     </nav>
 
@@ -63,8 +62,8 @@
       <p>DESCRIPTION</p>
       <p>
         Je m'appelle Nina, j'ai 29 ans et je suis en formation de développeur
-        web et web mobile chez Human Booster près de Lyon. Suite à mes études en art,
-        j'ai été visual merchandiser pendant 5 ans, une expérience qui m'a
+        web et web mobile chez Human Booster près de Lyon. Suite à mes études en
+        art, j'ai été visual merchandiser pendant 5 ans, une expérience qui m'a
         permis de développer mon esprit créatif et mon sens de l'organisation. À
         28 ans, j'ai ressenti le besoin de me poser la question : quelle est ma
         véritable passion et dans quel domaine souhaiterais-je consacrer les
@@ -83,17 +82,19 @@
       <ul>
         <li>
           <h3>Wander, maquette Figma</h3>
-          <a href="Mockup/wandermockup.html"><img
-            src="assets/Wander Figma reduce.jpg"
-            alt="Maquette Figma d'un site fictif Wander"
+          <a href="Mockup/wandermockup.html"
+            ><img
+              src="assets/Wander Figma reduce.jpg"
+              alt="Maquette Figma d'un site fictif Wander"
           /></a>
         </li>
 
         <li>
           <h3>Wander, maquette VSCode html/css</h3>
-          <a href="Mockup/wandervsmockup.html"><img
-            src="assets/Wander Vscode reduce.jpg"
-            alt="Maquette Figma d'un site fictif Wander"
+          <a href="Mockup/wandervsmockup.html"
+            ><img
+              src="assets/Wander Vscode reduce.jpg"
+              alt="Maquette Figma d'un site fictif Wander"
           /></a>
         </li>
       </ul>
@@ -101,23 +102,31 @@
       <ul>
         <li>
           <h3>Glowy, maquette Figma</h3>
-          <a href="Mockup/glowy.html"><img src="assets/GLOWY_page-0001.jpg" alt="" /></a>
+          <a href="Mockup/glowy.html"
+            ><img src="assets/GLOWY_page-0001.jpg" alt=""
+          /></a>
         </li>
         <li>
           <h3>Glowy, maquette Figma</h3>
-          <a href="Mockup/glowy.html"><img src="assets/GLOWY_page-0003.jpg" alt="" /></a>
+          <a href="Mockup/glowy.html"
+            ><img src="assets/GLOWY_page-0003.jpg" alt=""
+          /></a>
         </li>
       </ul>
 
       <ul>
         <li>
           <h3>Dazzling Yoga, maquette Figma</h3>
-          <a href="Mockup/dazzlingyoga.html"><img src="assets/Dazzling yoga_page-0001.jpg" alt="" /></a>
+          <a href="Mockup/dazzlingyoga.html"
+            ><img src="assets/Dazzling yoga_page-0001.jpg" alt=""
+          /></a>
         </li>
 
         <li>
           <h3>Noodly, maquette Figma</h3>
-          <a href="Mockup/noodly.html"><img src="assets/NOODLY.jpg" alt="" /></a>
+          <a href="Mockup/noodly.html"
+            ><img src="assets/NOODLY.jpg" alt=""
+          /></a>
         </li>
       </ul>
     </section>
@@ -125,7 +134,7 @@
     <section id="parcours">
       <h2>Mon parcours</h2>
 
-      <div>
+      <div class="hoverParcours">
         <p>2025</p>
         <p>
           En 2024/2025, je me forme en développement web et web mobile chez
@@ -133,7 +142,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2024</p>
         <p>
           En 2024, je deviens maman et créatrice de moments uniques avec mes
@@ -141,7 +150,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2023</p>
         <p>
           En 2023, grâce à l'Apple Foundation Program je découvre le
@@ -150,7 +159,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2017</p>
         <p>
           De 2017 à 2022, je deviens visuel merchandiser puis responsable visuel
@@ -159,7 +168,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2016</p>
         <p>
           En 2016, j'obtiens ma licence en Arts Plastiques spécialisation
@@ -167,7 +176,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2013</p>
         <p>
           En 2013, j'obtiens mon baccalauréat scientifique, option section
@@ -179,13 +188,21 @@
     <section id="socials">
       <h2>Mes réseaux</h2>
       <div>
-      <a href="https://www.linkedin.com/in/nina-quetin/"><h3>Mon Linkedin</h3></a>
-      <p>Je montre mes skills, partage mes projets, connecte avec d'autres pros et déniche de nouvelles opportunités ! 🚀</p>
-    </div>
-    <div>
-      <a href="https://github.com/niantique"><h3>Mon Github</h3></a>
-      <p>Je partage mon code, collabore sur des projets, explore de nouvelles technos et booste mon portfolio de développeur web ! 💻</p>
-    </div>
+        <a href="https://www.linkedin.com/in/nina-quetin/"
+          ><h3>Mon Linkedin</h3></a
+        >
+        <p>
+          Je montre mes skills, partage mes projets, connecte avec d'autres pros
+          et déniche de nouvelles opportunités ! 🚀
+        </p>
+      </div>
+      <div>
+        <a href="https://github.com/niantique"><h3>Mon Github</h3></a>
+        <p>
+          Je partage mon code, collabore sur des projets, explore de nouvelles
+          technos et booste mon portfolio de développeur web ! 💻
+        </p>
+      </div>
     </section>
 
     <!-- <section id="contact">
@@ -215,27 +232,19 @@
       </form>
     </section> -->
 
-    <footer>
-      <div style="text-align:center;">
-      <p>Et si nous créions</p>
-      <p>des merveilles <span>ensemble</span> ?</p>
-      <button>nina.quetin@gmail.com</button>
-    </div>
-
+    <footer id="mail">
+      <div style="text-align: center">
+        <p>Et si nous créions</p>
+        <p>des merveilles <span>ensemble</span> ?</p>
+        <button>nina.quetin.dev@gmail.com</button>
+      </div>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn">Top</button>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn">
+      Top
+    </button>
 
     <script>
-      // function showSideBar() {
-      //   const sidebar = document.querySelector('.sidebar')
-      //   sidebar.style.display = 'flex'
-      // }
-      // function hideSidebar() {
-      //   const sidebar = document.querySelector('.sidebar')
-      //   sidebar.style.display = 'none'
-      // }
       function showSideBar() {
         const sidebar = document.querySelector(".sidebar");
         if (sidebar.style.display === "none") {
@@ -255,21 +264,53 @@
         });
       });
 
-let mybutton = document.getElementById("myBtn");
+      let mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {scrollFunction()};
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+
+      $(document).ready(function () {
+  let firstDiv = $('.hoverParcours:first');
+  let firstDivOriginalColor = firstDiv.css('color');
+
+  firstDiv.css('color', 'white');
+
+  $('.hoverParcours').hover(
+    function () {
+      if (!$(this).is(firstDiv)) {
+        firstDiv.css('color', firstDivOriginalColor);
+      }
+      $(this).data('originalColor', $(this).css('color'));
+      $(this).css('color', 'white');
+    },
+    function () {
+      $(this).css('color', $(this).data('originalColor'));
+
+      if (!$('.hoverParcours:hover').length) {
+        firstDiv.css('color', 'white');
+      }
+    }
+  );
+});
+
+
     </script>
   </body>
 </html>
