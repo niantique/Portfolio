@@ -30,6 +30,8 @@
     href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap"
     rel="stylesheet"
   />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -128,42 +130,42 @@
     <section id="parcours">
       <h2>My Education</h2>
 
-      <div>
+      <div class="hoverParcours">
         <p>2025</p>
         <p>
             In 2024/2025, I am training in web and mobile web development at Human Booster in Villeurbanne.
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2024</p>
         <p>
             In 2024, I become a mother and I spent my time nurturing their dreams, watching them grow with each passing day.
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2023</p>
         <p>
             In 2023, thanks to the Apple Foundation Program, I discovered mobile app development in Swift at Simplon in Villeurbanne. I then completed the extended training by selection.
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2017</p>
         <p>
             From 2017 to 2022, I became a visual merchandiser and then a visual merchandising manager in various stores: New Look, Sostrene Grene, and New Yorker in the Paris region.
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2016</p>
         <p>
             In 2016, I completed my Bachelor's degree in Fine Arts with a specialization in installation at the Sorbonne.
         </p>
       </div>
 
-      <div>
+      <div class="hoverParcours">
         <p>2013</p>
         <p>
             In 2013, I completed my scientific high school diploma with a European section (English advanced) and major mathematics at Lycée Léon Blum in Créteil.
@@ -196,14 +198,6 @@
 
 
     <script>
-      // function showSideBar() {
-      //   const sidebar = document.querySelector('.sidebar')
-      //   sidebar.style.display = 'flex'
-      // }
-      // function hideSidebar() {
-      //   const sidebar = document.querySelector('.sidebar')
-      //   sidebar.style.display = 'none'
-      // }
       function showSideBar() {
         const sidebar = document.querySelector(".sidebar");
         if (sidebar.style.display === "none") {
@@ -238,6 +232,33 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+$(document).ready(function () {
+  let firstDiv = $('.hoverParcours:first');
+  let firstDivOriginalColor = firstDiv.css('color');
+
+  firstDiv.css('color', 'white');
+
+  $('.hoverParcours').hover(
+    function () {
+      if (!$(this).is(firstDiv)) {
+        firstDiv.css('color', firstDivOriginalColor);
+      }
+      $(this).data('originalColor', $(this).css('color'));
+      $(this).css('color', 'white');
+    },
+    function () {
+      $(this).css('color', $(this).data('originalColor'));
+
+      if (!$('.hoverParcours:hover').length) {
+        firstDiv.css('color', 'white');
+      }
+    }
+  );
+});
+
+
     </script>
   </body>
 </html>
