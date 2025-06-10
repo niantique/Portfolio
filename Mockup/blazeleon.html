@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nina Quétin - Maquette</title>
+    <link rel="stylesheet" href="../styles/style_mockup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <button onclick="showSideBar()" class="menuButton">
+        <a href="#nav">Menu</a>
+      </button>
+      <nav id="nav">
+        <ul class="sidebar">
+          <li><a href="../index.html">Description</a></li>
+          <li><a href="../index.html">Réalisations</a></li>
+          <li><a href="../index.html">Parcours</a></li>
+          <li><a href="../index.html">Réseaux</a></li>
+          <li><a href="../index.html">Contactez-moi</a></li>
+        </ul>
+      </nav>
+
+
+    <section>
+      <div>
+        <a href="https://niantique.github.io/Portfolio/"><h2>Mes réalisations</h2></a>
+        <div>
+          <h3>Blaze Leon, PHP, maquette Figma</h3>
+          <p>
+Dans le cadre de ce projet, j'ai d'abord réalisé la maquette d'un blog dédié aux voitures de luxe à l'aide de Figma, afin de concevoir une interface claire, moderne et adaptée au thème. Une fois la maquette finalisée, je l'ai ensuite intégrée en codant le site en PHP sur Visual Studio Code. Ce travail m'a permis de passer de la conception visuelle à la mise en œuvre technique d'un site web dynamique.<br>
+</p>
+<div>
+<ul>
+    <h3>Fonctionnalités: </h3>
+    <li>Pouvoir consulter les différentes publications</li>
+    <li>Pouvoir publier une nouvelle publication</li>
+    <li>Pouvoir gérer ses publications</li>
+    <li>Gestion des likes</li>
+</ul>
+
+<ul>
+    <h3>Compétences: </h3>
+    <li>Faire une maquette fonctionnelle des différentes page du blog.</li>
+    <li>Faire un diagramme de classes pour identifier les différentes entités, leurs relations et leurs propriétés.</li>
+    <li>Créer un fichier SQL avec les requêtes de mise en place de la base de données (table et jeu de données).</li>
+    <li>Créer un projet PHP-composer bien structuré.</li>
+    <li>Créer les classes entités.</li>
+    <li>Créer identifier les requêtes SQL nécessaires pour les différentes pages et fonctionnalités.</li>
+    <li>Créer les repositories et leurs méthodes correspondantes pour chaque entités.</li>
+    <li>Faire l'affichage.</li>
+</ul>
+</div>
+         <img src="../assets/blazeleon_main.png" alt="" />
+         <img src="../assets/blazeleon_article.png" alt="" />
+         <img src="../assets/blazeleon_form.png" alt="" />
+         <img src="../assets/blazeleon_update.png" alt="" />
+
+        </div>
+      </div>
+    </section>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn">Top</button>
+
+    <script>
+        function showSideBar() {
+          const sidebar = document.querySelector(".sidebar");
+          if (sidebar.style.display === "none") {
+            sidebar.style.display = "flex";
+          } else {
+            sidebar.style.display = "none";
+          }
+        }
+  
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+  
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+  
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+      </script>
+
+
+  </body>
+</html>
