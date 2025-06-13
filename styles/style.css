@@ -150,10 +150,21 @@ body {
           color: var(--font-color1);
           text-decoration: none;
         }
+        @media (max-width: 650px) {
+        a {
+          font-size: 4em;
+        }
+      }
         a:hover {
           font-style: italic;
           font-family: var(--font-family1);
           text-transform: lowercase;
+        }
+      }
+       @media (max-width: 650px) {
+        ul {
+          height: 100vh;
+          width: 100%;
         }
       }
     }
@@ -162,8 +173,6 @@ body {
   .sidebar {
     display: none;
     flex-direction: column;
-    max-width: 100%;
-    width: 100vw;
   }
 
   #herosection {
