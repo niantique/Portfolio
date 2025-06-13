@@ -100,10 +100,10 @@ body {
 
   @media (max-width: 650px) {
     button.menuButton {
-      margin-left: 85%;
+      margin-left: 70%;
     }
     a.englishVersion {
-      margin-left: 75%;
+      margin-left: 55%;
     }
   }
 
@@ -122,7 +122,8 @@ body {
 
   @media (max-width: 650px) {
     button.myBtn {
-      margin-left: 85%;
+      margin-top: 15%;
+      margin-left: 70%;
     }
   }
 
@@ -161,6 +162,8 @@ body {
   .sidebar {
     display: none;
     flex-direction: column;
+    max-width: 100%;
+    width: 100vw;
   }
 
   #herosection {
@@ -272,7 +275,7 @@ body {
     }
     @media (max-width: 650px) {
       p:first-child {
-        font-size: 9em;
+        display: none;
       }
     }
   }
@@ -350,6 +353,7 @@ body {
     @media (max-width: 650px) {
       p:first-child {
         font-size: 2em;
+        margin-bottom: 2vh;
       }
     }
     p:last-child {
@@ -357,6 +361,14 @@ body {
       text-align: justify;
       margin-left: 10%;
       margin-top: 2.5%;
+    }
+     @media (max-width: 650px) {
+      p:last-child {
+        margin-top: 25%;
+        margin-bottom: 10%;
+        margin-left: 15%;
+        width: 90%;
+      }
     }
   }
 }
@@ -366,17 +378,19 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 15%;
-  padding-right: 15%;
+  width: 100%;
   padding-bottom: 22%;
   height: 50vh;
   @media (max-width: 650px) {
     height: 80vh;
+    width: 100%;
   }
   h2 {
     padding-top: 10%;
   }
   div {
+    margin-left: 5%;
+    margin-right: 5%;
     a {
       text-decoration: none;
     }
@@ -399,6 +413,11 @@ body {
         font-size: 2em;
       }
     }
+  }
+  @media (max-width: 650px) {
+    /* div {
+      margin-left: 5%;
+    } */
   }
 }
 
