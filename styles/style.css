@@ -318,6 +318,12 @@ body {
         background-color: var(--font-color2);
         opacity: 0.3;
       }
+      @media (max-width: 650px) {
+      img {
+        background-color: none;
+        opacity: 1;
+      }
+    }
       img:hover {
         background: none;
         opacity: 1;
