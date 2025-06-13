@@ -89,10 +89,10 @@ body {
   }
   @media (max-width: 650px) {
     button.menuButton {
-      margin-left: 85%;
+      margin-left: 70%;
     }
     a.englishVersion {
-      margin-left: 75%;
+      margin-left: 55%;
     }
   }
 
@@ -112,7 +112,7 @@ body {
 
   @media (max-width: 650px) {
     button.myBtn {
-      margin-left: 85%;
+      margin-left: 70%;
     }
   }
 
@@ -152,10 +152,10 @@ body {
   }
 
   section {
-            margin-left: 3em;
-
+    margin-left: 3em;
     margin-top: 2%;
     div {
+      
       h2 {
         color: var(--font-color1);
         font-family: var(--font-family2);
@@ -164,6 +164,11 @@ body {
         writing-mode: vertical-lr;
         margin-right: 0.5em;
       }
+      @media (max-width: 650px) {
+      h2 {
+        font-size: 2em;
+      }
+    }
       a {
         text-decoration: none;
       }
